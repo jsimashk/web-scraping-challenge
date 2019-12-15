@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MARS</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="jumbotron text-center">
+      <h1>Mission to MARS</h1>
+      <p>Latest News. Featured Image. Weather. Facts. And More...</p>
+      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data!</a></p>
+    </div>
+  </div>
+
+          
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+        <h2>Latest MARS News</h2>
+        <h3>{{ mars_info.title }}</h3>
+        <p>{{ mars_info.news }}</p>
+      
+        <h2>Current Weather on MARS</h2>
+        <p>{{ mars_info.weather_info }}</p>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <h2>Featured MARS Image</h2>
+            <img src="{{ mars_info.featured_img }}" alt="Mars" style="width:70%; height:auto;">  
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" runat="server">
+            <h2>MARS Facts</h2>
+              @{{mars_info.facts_table}}
+          </div>
+      </div>
+      </div>
+        
+    <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+              <h2>{{mars_info.hem_title0}}</h2>
+              <img src="{{mars_info.hem_img_url0}}" style="max-width:95%;height:auto;">
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <h2>{{mars_info.hem_title1}}</h2>
+                <img src="{{mars_info.hem_img_url1}}"  style="max-width:95%;height:auto;">
+                
+          </div>
+    </div>
+    <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+              <h2>{{mars_info.hem_title2}}</h2>
+                <img src="{{mars_info.hem_img_url2}}" style="max-width:95%;height:auto;">
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+              <h2>{{mars_info.hem_title3}}</h2>
+                <img src="{{mars_info.hem_img_url3}}"  style="max-width:95%;height:auto;">
+        </div>
+    </div>
+</div>
+
+
+</body>
+
+</html>

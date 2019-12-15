@@ -1,0 +1,28 @@
+h1 {
+    color: blue;
+}
+
+h2 {
+    color: #ad4c4c;
+    font-weight: 600;
+    size: 30px;
+}
+
+aside {
+    float: right;
+}
+
+section {
+    float: left;
+    width: 80%;
+}
+
+.container{
+    display: flexbox;
+    border: solid 1px red;
+}
+
+body{
+    float: center;
+    padding: 15px;
+}
