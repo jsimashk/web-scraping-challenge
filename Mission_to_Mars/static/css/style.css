@@ -8,6 +8,12 @@ h2 {
     size: 30px;
 }
 
+h3 {
+    color: #ad4c4c;
+    font-weight: 600;
+    size: 15px;
+}
+
 aside {
     float: right;
 }
@@ -19,7 +25,7 @@ section {
 
 .container{
     display: flexbox;
-    border: solid 1px red;
+    /*border: solid 1px red;*/
 }
 
 body{
